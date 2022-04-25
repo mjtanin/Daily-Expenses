@@ -1,0 +1,36 @@
+{
+  "name": "daily-expenses",
+  "version": "1.0.0",
+  "description": "With this app you will be able to calculate the daily cost",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjtanin/Daily-Expenses.git"
+  },
+  "keywords": [
+    "Daily",
+    "Cost",
+    "calculate"
+  ],
+  "author": "Tanin Ahmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mjtanin/Daily-Expenses/issues"
+  },
+  "homepage": "https://github.com/mjtanin/Daily-Expenses#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^6.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
