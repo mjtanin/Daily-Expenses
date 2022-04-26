@@ -2,11 +2,15 @@ const express = require('express')
 const colors = require('colors')
 const dotenv = require('dotenv').config()
 const { errorMiddleware } = require('./middlewares/errorMiddleware')
+const connectDB = require('./config/db')
 
+
+connectDB()
 const app = express()
 const PORT = process.env.PORT ?? 5000
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
+
 app.get('/', (req, res) => {
   res.status(200).json({message: "Welcome to Daily Expenses API"})
 })
